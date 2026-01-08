@@ -137,7 +137,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
                 parse_mode="HTML"
             )
             await update.message.reply_text(
-                "<b>Я передал ваш запрос оператору.</b>",
+                "<b>Извините, я не понял вашего вопроса. Перевожу оператора.\n</b><blockquote>График: с 10:00 до 00:00 (МСК)</blockquote>",
                 parse_mode="HTML"
             )
             return
@@ -262,4 +262,5 @@ if __name__ == "__main__":
 
     print("БОТ ЗАПУЩЕН")
     app.run_polling()
+
 
