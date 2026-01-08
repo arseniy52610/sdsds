@@ -74,7 +74,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
         await context.bot.send_message(
             chat_id=ADMIN_CHAT_ID,
             text=(
-                f"<b>Сообщение от пользователя {user_id}:</b>\n"
+                f"<b>Сообщение от пользователя <code>{user_id}</code>:</b>\n"
                 f"<blockquote>{text}</blockquote>"
             ),
             parse_mode="HTML"
@@ -88,7 +88,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
         await context.bot.send_message(
             chat_id=ADMIN_CHAT_ID,
             text=(
-                f"<b>Пользователь {user_id} вызывает оператора:</b>\n"
+                f"<b>Пользователь <code>{user_id}</code> вызывает оператора:</b>\n"
                 f"<blockquote>{text}</blockquote>"
             ),
             parse_mode="HTML"
