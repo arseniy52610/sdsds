@@ -1,5 +1,6 @@
 python-telegram-bot==20.7
-mistralai>=0.3.2
+mistralai>=0.3.0
 python-dotenv
+
 
 
