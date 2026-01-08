@@ -133,7 +133,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
             operator_sessions[user_id] = True
             await context.bot.send_message(
                 chat_id=ADMIN_CHAT_ID,
-                text=f"<b>Пользователь {user_id} переведён на оператора.</b>",
+                text=f"<b>Пользователь <code>{user_id}</code> переведён на оператора.</b>",
                 parse_mode="HTML"
             )
             await update.message.reply_text(
